@@ -5,6 +5,7 @@ import { ParticleBackground } from './components/ParticleBackground';
 import { HomePage } from './pages/HomePage';
 import { CategoryPage } from './pages/CategoryPage';
 import { DetailPage } from './pages/DetailPage';
+import { PuzzlePage } from './pages/PuzzlePage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/category/:category" element={<CategoryPage />} />
             <Route path="/microbe/:id" element={<DetailPage />} />
+            <Route path="/puzzle" element={<PuzzlePage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>

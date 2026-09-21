@@ -1,9 +1,24 @@
-import type { Microbe, MicrobeCategory, Stats, ApiResponse } from '../../shared/types';
+import type {
+  ApiResponse,
+  Microbe,
+  MicrobeCategory,
+  Stats,
+} from '../../shared/types';
+import type {
+  Assignment,
+  HintReceipt,
+  PublicPuzzleLevel,
+  PuzzleHint,
+  PuzzleVerdict,
+} from '../../shared/puzzleTypes';
 
 const API_BASE = '/api';
 
-async function request<T>(endpoint: string): Promise<T> {
-  const res = await fetch(`${API_BASE}${endpoint}`);
+async function request<T>(endpoint: string, init?: RequestInit): Promise<T> {
+  const res = await fetch(`${API_BASE}${endpoint}`, {
+    headers: { 'Content-Type': 'application/json', ...(init?.headers ?? {}) },
+    ...init,
+  });
   const data: ApiResponse<T> = await res.json();
   if (!data.success || !data.data) {
     throw new Error(data.error || '请求失败');
@@ -29,4 +44,20 @@ export const api = {
   getRelated: (id: number, limit: number = 4) => request<Microbe[]>(`/microbes/${id}/related?limit=${limit}`),
 
   getStats: () => request<Stats>('/stats'),
+
+  getPuzzleLevels: () => request<PublicPuzzleLevel[]>('/puzzles'),
+
+  getPuzzleLevel: (levelId: string) => request<PublicPuzzleLevel>(`/puzzles/${levelId}`),
+
+  submitPuzzle: (levelId: string, assignment: Assignment, hintReceipts: HintReceipt[] = []) =>
+    request<PuzzleVerdict>('/puzzles/submit', {
+      method: 'POST',
+      body: JSON.stringify({ levelId, assignment, hintReceipts }),
+    }),
+
+  requestPuzzleHint: (levelId: string, assignment: Assignment, elapsedSeconds: number, tier?: 1 | 2 | 3) =>
+    request<PuzzleHint>(`/puzzles/${levelId}/hint`, {
+      method: 'POST',
+      body: JSON.stringify({ assignment, elapsedSeconds, tier }),
+    }),
 };

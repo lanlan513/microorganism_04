@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Dna, Search, Menu, X } from 'lucide-react';
+import { Home, Dna, Search, Menu, X, Network } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export function Navbar() {
@@ -15,6 +15,7 @@ export function Navbar() {
 
   const navItems = [
     { to: '/', label: '首页大厅', icon: Home },
+    { to: '/puzzle', label: '生态解谜', icon: Network },
     { to: '/category/bacteria', label: '细菌', icon: Dna },
     { to: '/category/fungi', label: '真菌', icon: Dna },
     { to: '/category/virus', label: '病毒', icon: Dna },
