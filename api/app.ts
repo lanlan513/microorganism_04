@@ -17,6 +17,10 @@ app.get('/', (_req, res) => {
       'GET /api/microbes/category/:category': '按分类获取微生物',
       'GET /api/microbes/:id/related': '获取相关微生物',
       'GET /api/stats': '获取统计数据',
+      'GET /api/ecology/levels': '生态解谜关卡列表',
+      'POST /api/ecology/puzzles': '服务端生成并洗牌生态谜题',
+      'POST /api/ecology/grade': '服务端裁决玩家提交',
+      'POST /api/ecology/hints': '按卡住时间返回分级扣分提示',
     },
   });
 });

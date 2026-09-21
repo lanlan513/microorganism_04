@@ -158,3 +158,22 @@
     transform: translateY(-10px);
   }
 }
+
+@keyframes ecologyCollapse {
+  0% { transform: translateY(0); opacity: 1; }
+  55% { transform: translateY(10px); opacity: 0.72; }
+  100% { transform: translateY(22px); opacity: 0.45; }
+}
+
+@keyframes edgeFault {
+  0%, 100% { stroke-dashoffset: 0; opacity: 1; }
+  50% { stroke-dashoffset: 8; opacity: 0.45; }
+}
+
+.ecology-collapse {
+  animation: ecologyCollapse 1.4s ease-in-out infinite alternate;
+}
+
+.ecology-edge-fault {
+  animation: edgeFault 0.7s ease-in-out infinite;
+}

@@ -1,0 +1,68 @@
+{
+  "assignment": {
+    "slot-5-a0e442eb": "desulfovibrio",
+    "slot-1-e539238b": "sulfurovum",
+    "slot-2-b8d8facc": "bathymodiolus-symbiont",
+    "slot-7-5806574d": "bathymodiolus",
+    "slot-6-874c9b7a": "kiwa",
+    "slot-4-eff780bf": "rimicaris",
+    "slot-3-025e560a": "zoarcid"
+  },
+  "first": {
+    "verdict": "accepted",
+    "baseScore": 100,
+    "invalidRelations": [],
+    "nodeFailures": [],
+    "activeSlots": [
+      "endoriftia",
+      "riftia",
+      "slot-1-e539238b",
+      "slot-2-b8d8facc",
+      "slot-3-025e560a",
+      "slot-4-eff780bf",
+      "slot-5-a0e442eb",
+      "slot-6-874c9b7a",
+      "slot-7-5806574d",
+      "vent-fluid"
+    ],
+    "solver": {
+      "solutionCount": "many",
+      "solutionCountLimit": 2,
+      "checkedBy": "independent-server-backtracking-solver"
+    },
+    "rulesVersion": "ecology-rules-1.0.0",
+    "decisionHash": "f6e84bfb9946654cba23c99af105e65703bec1293e89a77054f23032d2264fe6",
+    "message": "通过：所有声明关系合法，并且每个物种都能从已激活伙伴获得碳源。",
+    "hintPenalty": 0,
+    "score": 100
+  },
+  "second": {
+    "verdict": "accepted",
+    "baseScore": 100,
+    "invalidRelations": [],
+    "nodeFailures": [],
+    "activeSlots": [
+      "endoriftia",
+      "riftia",
+      "slot-1-e539238b",
+      "slot-2-b8d8facc",
+      "slot-3-025e560a",
+      "slot-4-eff780bf",
+      "slot-5-a0e442eb",
+      "slot-6-874c9b7a",
+      "slot-7-5806574d",
+      "vent-fluid"
+    ],
+    "solver": {
+      "solutionCount": "many",
+      "solutionCountLimit": 2,
+      "checkedBy": "independent-server-backtracking-solver"
+    },
+    "rulesVersion": "ecology-rules-1.0.0",
+    "decisionHash": "f6e84bfb9946654cba23c99af105e65703bec1293e89a77054f23032d2264fe6",
+    "message": "通过：所有声明关系合法，并且每个物种都能从已激活伙伴获得碳源。",
+    "hintPenalty": 0,
+    "score": 100
+  },
+  "assertion": "deepEqual(first, second) && first.decisionHash === second.decisionHash"
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "levelId": "vent-sulfur-cycle",
+    "generatedFromSeed": "proof-vent-sulfur-cycle",
+    "shuffled": true,
+    "witness": {
+      "slot-7-47acf024": "desulfovibrio",
+      "slot-5-30f1609f": "sulfurovum",
+      "slot-4-d629a317": "bathymodiolus-symbiont",
+      "slot-2-a581f7d6": "bathymodiolus",
+      "slot-1-7ff1f7cd": "kiwa",
+      "slot-6-643bf3c3": "rimicaris",
+      "slot-3-0134217d": "zoarcid"
+    },
+    "witnessVerdict": "accepted",
+    "solverSolutionCount": "many",
+    "solverSolutionLimit": 2,
+    "invariantHashes": {
+      "levelConstraintHash": "3234bfa9429c7c06c6eb0edc86ab9d9d0b1a78444f634ddf6d6f98712566c6a2",
+      "shuffledConstraintHash": "3234bfa9429c7c06c6eb0edc86ab9d9d0b1a78444f634ddf6d6f98712566c6a2"
+    },
+    "soundnessChecks": [
+      "slot-renaming is a bijective permutation and does not change edge endpoints",
+      "independent backtracking solver found at least one complete assignment",
+      "constructive witness was replayed through the production grader",
+      "all locked nodes were fixed before player tokens were offered"
+    ],
+    "note": "The public API exposes only this proof summary and commitment, never the witness."
+  },
+  {
+    "levelId": "gut-cross-feeding",
+    "generatedFromSeed": "proof-gut-cross-feeding",
+    "shuffled": true,
+    "witness": {
+      "slot-2-912f3ce7": "bacteroides-thetaiotaomicron",
+      "slot-3-e4557b89": "bifidobacterium-adolescentis",
+      "slot-1-61507f1c": "akkermansia-muciniphila",
+      "slot-6-70ad046c": "methanobrevibacter-smithii",
+      "slot-8-a945bafa": "faecalibacterium-prausnitzii",
+      "slot-5-7db56b03": "anaerobutyricum-hallii",
+      "slot-7-5bc44bad": "roseburia-intestinalis",
+      "slot-4-d92b025b": "crassphage"
+    },
+    "witnessVerdict": "accepted",
+    "solverSolutionCount": 1,
+    "solverSolutionLimit": 2,
+    "invariantHashes": {
+      "levelConstraintHash": "e2caf617912722138f28f04e790c94a206b4cb5ae480e674e07dfe9a1d0e5a0b",
+      "shuffledConstraintHash": "e2caf617912722138f28f04e790c94a206b4cb5ae480e674e07dfe9a1d0e5a0b"
+    },
+    "soundnessChecks": [
+      "slot-renaming is a bijective permutation and does not change edge endpoints",
+      "independent backtracking solver found at least one complete assignment",
+      "constructive witness was replayed through the production grader",
+      "all locked nodes were fixed before player tokens were offered"
+    ],
+    "note": "The public API exposes only this proof summary and commitment, never the witness."
+  },
+  {
+    "levelId": "forest-mycorrhizal-web",
+    "generatedFromSeed": "proof-forest-mycorrhizal-web",
+    "shuffled": true,
+    "witness": {
+      "slot-1-eb075186": "betula-papyrifera",
+      "slot-3-fea74e8a": "rhizopogon",
+      "slot-2-04733613": "glomus",
+      "slot-6-79ef3dc2": "mycorrhiza-helper-bacterium",
+      "slot-7-4c147e78": "tamiasciurus-hudsonicus",
+      "slot-5-97a70ab1": "accipiter-gentilis",
+      "slot-4-f4967969": "forest-springtail",
+      "slot-8-dcda332c": "monotropa-uniflora"
+    },
+    "witnessVerdict": "accepted",
+    "solverSolutionCount": "many",
+    "solverSolutionLimit": 2,
+    "invariantHashes": {
+      "levelConstraintHash": "877024df541937ceb628f11cf7d45f9627169a07a295a049a459c0490d95c864",
+      "shuffledConstraintHash": "877024df541937ceb628f11cf7d45f9627169a07a295a049a459c0490d95c864"
+    },
+    "soundnessChecks": [
+      "slot-renaming is a bijective permutation and does not change edge endpoints",
+      "independent backtracking solver found at least one complete assignment",
+      "constructive witness was replayed through the production grader",
+      "all locked nodes were fixed before player tokens were offered"
+    ],
+    "note": "The public API exposes only this proof summary and commitment, never the witness."
+  }
+]

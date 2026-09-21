@@ -1,8 +1,10 @@
 import { Router } from 'express';
 import { MicrobeController } from '../src/controllers/MicrobeController.js';
+import { ecologyRouter } from './ecology.js';
 
 const router = Router();
 
+router.use('/', ecologyRouter);
 router.get('/microbes', MicrobeController.getAll);
 router.get('/microbes/stats', MicrobeController.getStats);
 router.get('/microbes/category/:category', MicrobeController.getByCategory);
